@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Factorial</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+            function factorial(num) {
+                let result = 1; 
+
+                for (let i = 2; i <= num; i++) {
+                    result *= i;
+                }
+                return result;
+            }
+
+            function showFactorial(){
+
+                var num = Number(document.getElementById("factorialOf").value);
+
+                document.getElementById("factorialResult").innerHTML = 
+                `Factorial of ${num.toString()} is ${factorial(num)}`;
+            }
+            
+    </script>
+</head>
+<body>
+    <header>
+            <h1>Factorial</h1>
+    </header>
+
+
+    <div class="factorial input">
+        <h3>Show Factorial</h3>
+<div class="dataInput">
+Check factorial of: <input id="factorialOf" type="number" value="1" step="0.1" min="0"/>
+</div>
+<div class="button">
+<button onclick="showFactorial()">Show factorial</button>
+<textarea id="factorialResult" rows="3"></textarea>
+</div>
+</div>
+
+<footer>Author: Marek Zarzycki 2019</footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zad 5 - pętle</title>
+    <script> 
+                function silnia(liczba){ 
+                       let wynik = 1; 
+
+                       // i <= liczba - 1  -> i < liczba ; i <= 9 i  < 10     
+                       for (let i = 2; i <= liczba ; i++) { // liczba = 10 -> 9 razy
+                          wynik *= i; // wynik = wynik * i; // i=2   wynik=1  1 * 2
+                       }
+                       return wynik;
+                    }
+                    
+                      function wyliczSilnie(){
+                        
+                            var liczba = Number(document.getElementById("nbLiczba").value);
+                             document.getElementById("sWynik").innerHTML = 
+                            `Silnia dla liczby ${liczba.toString()} wynosi ${silnia(liczba)}`;
+
+                            //"Silnia dla liczby" + liczba  + "wynosi" + silnia(liczba); 
+                } 
+
+
+    </script>
+</head>
+<body>
+    Liczba:  <input id="nbLiczba" type="number" value="1" min="0" max="100" />
+    
+            <button onclick="wyliczSilnie()">Wylicz silnie</button>
+        <span id="sWynik">
+
+        
+        </span>
+
+</body>
+</html>

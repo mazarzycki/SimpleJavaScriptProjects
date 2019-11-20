@@ -6,7 +6,10 @@ h1 {
     text-align: center;
     margin-left: 30px;
 }
-.input {
+p {
+    margin: 3em;
+}
+.dataInput {
     padding: 30px;
 }
 .button {
@@ -15,22 +18,26 @@ h1 {
 footer {
     background-color: lightblue;
 }
-
 #Pounds, #Kilograms{
     border: 2px black solid;
     width: 50px;   
 }
-
-.Lbs {
+.input {
     display: inline-block;
     border: 2px solid black;
-    margin: auto auto auto 400px;
     padding: 50px;
+}
+.Lbs {
+    margin: auto auto auto 400px;
 }
 .Kgs {
-    display: inline-block;
-    border: 2px solid black;
     margin: 20px;
-    padding: 50px;
 }
-
+.OddEven {
+    margin-left: 500px;
+    padding: 60px;
+}
+.nextSeason {
+    margin-left: 500px;
+    padding: 60px;
+}
