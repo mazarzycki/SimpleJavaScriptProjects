@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+            function poundsToKilograms(num1, num2 = 0.45359237){
+                return num1 * 0.45359237;
+            }
+        
+            function showKilograms() {
+                var name1 = document.getElementById("Pounds").value;
+                
+        
+                var finalResult = poundsToKilograms(Number(name1), Number(0.45359237));
+        
+                document.getElementById("PoundsToKg").innerHTML = finalResult;
+            } 
+
+            function kilogramsToPounds(num1, num2 = 0.45359237) {
+                return num1 / 0.45359237;
+            }
+            function showPounds() {
+                var name2 = document.getElementById("Kilograms").value;
+
+                var finalResult2 = kilogramsToPounds(Number(name2), Number(0.45359237));
+
+                document.getElementById("KgToPounds").innerHTML = finalResult2;
+            }
+            </script>
+</head>
+<body>
+    <header>
+            <h1>Converter</h1>
+    </header>
+
+
+    <div class="Lbs">
+        <h3>Convert Pounds to Kilograms</h3>
+<div class="input">
+Pounds: <input id="Pounds" type="number" value="1" step="0.1" min="0"/>
+</div>
+<div class="button">
+<button onclick="showKilograms()">Show kilograms</button>
+<textarea id="PoundsToKg" rows="1"></textarea>
+</div>
+</div>
+
+<div class="Kgs">
+<h3>Convert Kilograms to Pounds</h3>
+<div class="input">
+Kilograms: <input id="Kilograms" type="number" value="1" step="0.1" min="0">
+</div>
+<div class="button">
+<button onclick="showPounds()">Show pounds</button>
+<textarea id="KgToPounds" rows="1"></textarea>
+</div>
+</div>
+
+<div class="">
+
+
+</div>
+   
+<footer>Author: Marek Zarzycki 2019</footer>
+</body>
+</html>

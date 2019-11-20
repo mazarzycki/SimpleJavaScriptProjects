@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function parity(num){
+            if(num % 2 == 0) {
+                return true;
+            } 
+            else {
+                return false;
+            }
+        }
+
+        function checkParity(){
+            var num = Number(document.getElementById("NumberToBeChecked").value);
+
+            document.getElementById("OddOrEven").innerHTML = 
+            parity(num) == true ? "Even" : "Odd";
+        }
+
+
+    </script>
+</head>
+<body>
+    <header>
+            <h1>Odd or Even</h1>
+    </header>
+
+
+    <div class="OddEven">
+        <h3>Check if the number is odd or even</h3>
+<div class="input">
+Number to be checked: <input id="NumberToBeChecked" type="number" value="1" min="0"/>
+</div>
+<div class="button">
+<button onclick="checkParity()">Show the result</button>
+<textarea id="OddOrEven" rows="1"></textarea>
+</div>
+</div>
+
+
+
+
+   
+<footer>Author: Marek Zarzycki 2019</footer>
+</body>
+</html>
