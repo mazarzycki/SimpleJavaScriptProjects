@@ -7,10 +7,10 @@
     <title>Factorial</title>
     <link rel="stylesheet" href="style.css">
     <script>
-            function factorial(num) {
-                let result = 1; 
+            function factorial(number1) {
+                let result = 2; 
 
-                for (let i = 2; i <= num; i++) {
+                for (let i = 2; i <= number1; i++) {
                     result *= i;
                 }
                 return result;
@@ -18,10 +18,10 @@
 
             function showFactorial(){
 
-                var num = Number(document.getElementById("factorialOf").value);
+                var number1 = Number(document.getElementById("factorialOf").value);
 
                 document.getElementById("factorialResult").innerHTML = 
-                `Factorial of ${num.toString()} is ${factorial(num)}`;
+                `Factorial of ${number1.toString()} is ${factorial(number1)}`;
             }
             
     </script>

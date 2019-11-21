@@ -7,24 +7,27 @@
     <title>Where will you play next season?</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        // This script doesn't work. Find out why! 
+        
         var competitions = ["You have qualified to the Champions League!", "You have qualified to the Europa League!", "You didn't qualify to Europe and remained in the first division.", "You were relegated to the second division."];
-        function position(number) {
-            if (number >=1 && <=4) {
+        function position(number1) {
+            if (number1 >=1 && number1 <5) {
                 return competitions[0];
-            } else if (number >=5 && <=7) {
+            } else if (number1 >=5 && number1 <8) {
                 return competitions[1];
-            } else if (number >=8 & <=15) {
+            } else if (number1 >=8 & number1 <16) {
                 return competitions[2];
-            } else {
+            } else if (number1 >=16 && number1 <=18) {
                 return competitions[3];
+            } else {
+                return "Insert a number in the range of 1 and 18."
             }
+
         }
 
         function checkCompetition() {
-            var number = Number(document.getElementById("finalPosition").value);
+            var number1 = Number(document.getElementById("finalPosition").value);
 
-            document.getElementById("competition").innerHTML = /* position(number); */ //check how to write it to get the result from the array!
+            document.getElementById("competition").innerHTML =  `${position(number1)}`;
         } 
     </script>
     <script>
@@ -60,7 +63,7 @@
 
 
     <div class="next-season-where input">
-        <h3>Check where you will play next season - DOESN'T WORK!!!!</h3>
+        <h3>Check where you will play next season.</h3>
 <div class="datainput">
 What is your final position in the table? <input id="finalPosition" type="number" value="1" min="1" max="18"/>
 </div>
