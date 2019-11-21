@@ -1,5 +1,31 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 header{
     background-color: lightblue;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+/* Navigation*/
+.main-nav li {
+    display: inline;
+    padding: 0 2%;;
+}
+.main-nav a {
+    display: inline-block;
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+}
+.main-nav a:hover {
+background-color: rgba(255, 255, 255, .3);
+}
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 
 h1 {
@@ -18,26 +44,47 @@ p {
 footer {
     background-color: lightblue;
 }
+.input {
+    display: inline-block;
+    border: 2px solid black;
+    
+}
+
+/* Converter*/
 #Pounds, #Kilograms{
     border: 2px black solid;
     width: 50px;   
 }
-.input {
-    display: inline-block;
-    border: 2px solid black;
-    padding: 50px;
-}
+
 .Lbs {
     margin: auto auto auto 400px;
+    padding: 40px;
 }
 .Kgs {
     margin: 20px;
+    padding: 40px;
 }
+
+/*if-else*/
+.next-season-where {
+    margin: 30px auto auto 100px;
+    height: 240px;
+    padding: 40px;
+}
+.next-season-europe {
+    margin: 30px 20px;
+    height: 240px;
+    padding: 40px;
+}
+
+/*Odd-Even*/
 .OddEven {
-    margin-left: 500px;
+    margin: 30px 500px;
     padding: 60px;
 }
-.nextSeason {
-    margin-left: 500px;
-    padding: 60px;
+
+/*factorial*/
+.factorial {
+    margin: 30px auto 30px 600px;
+    padding: 30px;
 }
