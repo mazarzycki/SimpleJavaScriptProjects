@@ -17,7 +17,7 @@
         
                 var finalResult = poundsToKilograms(Number(name1), Number(0.45359237));
         
-                document.getElementById("PoundsToKg").innerHTML = finalResult;
+                document.getElementById("PoundsToKg").innerHTML = finalResult.toFixed(2);
             } 
 
             function kilogramsToPounds(num1, num2 = 0.45359237) {
@@ -28,7 +28,7 @@
 
                 var finalResult2 = kilogramsToPounds(Number(name2), Number(0.45359237));
 
-                document.getElementById("KgToPounds").innerHTML = finalResult2;
+                document.getElementById("KgToPounds").innerHTML = finalResult2.toFixed(2);
             }
             </script>
 </head>
@@ -36,11 +36,13 @@
     <header>
             <nav class="main-nav">
                     <li><a href="main.html">Main</a></li>
+                    <li><a href="weightConverter.html">Converter</a></li>
                     <li><a href="ifelse.html">If - Else statements</a></li>
                     <li><a href="OddEven.html">Odd or Even</a></li>
                     <li><a href="factorial.html">Factorial</a></li>
                     <li><a href="#">EMPTY</a></li>
-            </nav>
+                    
+                </nav>
             <h1>Converter</h1>
      </header>
 

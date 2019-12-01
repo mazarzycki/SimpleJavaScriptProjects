@@ -3,7 +3,7 @@
     font-family: sans-serif;
 }
 header{
-    background-color: lightblue;
+    background-color: #3eb4c1;
     background-size: cover;
     padding-bottom: 10px;
 }
@@ -42,13 +42,16 @@ p {
     margin-left: 30px;
 }
 footer {
-    background-color: lightblue;
+    background-color:#3eb4c1;
+    font-weight: bold;
+    padding: 5px;
 }
 .input {
     display: inline-block;
     border: 2px solid black;
     
 }
+
 
 /* Converter*/
 #Pounds, #Kilograms{
@@ -66,17 +69,25 @@ footer {
 }
 
 /*if-else*/
+.ifelse {
+    text-align: center;
+}
 .next-season-where {
-    margin: 30px auto auto 100px;
-    height: 240px;
+    margin: 30px;
+    height: 250px;
+    width: 500px;
     padding: 40px;
 }
 .next-season-europe {
-    margin: 30px 20px;
-    height: 240px;
+    margin: 30px;
+    height: 250px;
+    width: 500px;
     padding: 40px;
 }
-
+.input-season {
+    display: inline-block;
+    border: 2px solid black;
+}
 /*Odd-Even*/
 .OddEven {
     margin: 30px 500px;
